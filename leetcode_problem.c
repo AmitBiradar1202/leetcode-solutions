@@ -31,3 +31,24 @@ class Solution {
 
 
     int carry=0;
+
+
+            
+            if(l2!=null){
+                l2=l2.next;
+            }
+            current.next= new ListNode(sum%10);
+            current=current.next;
+            if(l1!=null){
+                l1=l1.next;
+            }
+
+            
+
+            int sum=x+y+carry;
+            carry=sum/10;
+            int x=(l1!=null)?l1.val:0;
+            int y=(l2!=null)?l2.val:0;
+    int carry=0;
+
+        while(l1!=null || l2!=null){
